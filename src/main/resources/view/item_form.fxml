@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.shape.Rectangle?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.item.ItemFormController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <TableView fx:id="tblItems" layoutX="63.0" layoutY="221.0" prefHeight="202.0" prefWidth="837.0">
+            <columns>
+                <TableColumn fx:id="colID" prefWidth="116.80001831054688" text="txtID" />
+                <TableColumn fx:id="colDescription" prefWidth="309.6000061035156" text="Description" />
+                <TableColumn fx:id="colPackSize" prefWidth="149.5999755859375" text="Pack Size" />
+                <TableColumn fx:id="colUnitPrice" prefWidth="151.199951171875" text="Unit Price" />
+                <TableColumn fx:id="colQtyOnHand" prefWidth="104.7999267578125" text="QtyOnHand" />
+            </columns>
+        </TableView>
+        <JFXButton layoutX="849.0" layoutY="441.0" onAction="#btnReloadOnAction" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #fbc531;" text="Reload" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </JFXButton>
+        <JFXTextField fx:id="txtId" layoutX="19.0" layoutY="131.0" promptText="ID" />
+        <JFXTextField fx:id="txtDescription" layoutX="209.0" layoutY="131.0" promptText="Description" />
+        <JFXTextField fx:id="txtPackSize" layoutX="396.0" layoutY="129.0" promptText="Pack Size" />
+        <JFXTextField fx:id="txtUniPrice" layoutX="601.0" layoutY="129.0" promptText="Unit Price" />
+        <JFXTextField fx:id="txtQtyOnHand" layoutX="809.0" layoutY="129.0" promptText="QtyOnHand" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#192a56" height="64.0" layoutX="5.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="954.0" />
+        <Label layoutX="394.0" layoutY="10.0" text="Item Form" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <JFXButton layoutX="517.0" layoutY="441.0" onAction="#btnAddOnAction" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #4cd137;" text="Add" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </JFXButton>
+        <JFXButton layoutX="600.0" layoutY="441.0" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #00a8ff;" text="Update" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </JFXButton>
+        <JFXButton layoutX="681.0" layoutY="441.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #e84118;" text="Delete" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </JFXButton>
+        <JFXButton layoutX="767.0" layoutY="441.0" onAction="#btnSearchOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #353b48;" text="Search" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </JFXButton>
+        <Separator layoutX="563.0" layoutY="113.0" orientation="VERTICAL" prefHeight="88.0" prefWidth="0.0" />
+        <Separator layoutX="368.0" layoutY="113.0" orientation="VERTICAL" prefHeight="88.0" prefWidth="0.0" />
+        <Separator layoutX="175.0" layoutY="113.0" orientation="VERTICAL" prefHeight="88.0" prefWidth="0.0" />
+        <Separator layoutX="764.0" layoutY="113.0" orientation="VERTICAL" prefHeight="88.0" prefWidth="0.0" />
+    </children>
+</AnchorPane>

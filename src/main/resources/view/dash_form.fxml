@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.dashboard.DashFromController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="200.0">
+            <children>
+                <JFXButton layoutX="52.0" layoutY="98.0" onAction="#btnItemFormOnAction" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #6c5ce7; -fx-background-radius: 15px;" text="Item Form" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="52.0" layoutY="152.0" onAction="#btnCustomerFormOnAction" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #6c5ce7; -fx-background-radius: 15px;" text="Customer Form" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="52.0" layoutY="207.0" onAction="#btnOrdersFormOnAction" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #6c5ce7; -fx-background-radius: 15px;" text="Orders" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="52.0" layoutY="260.0" onAction="#btnOrderListFormOnAction" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #6c5ce7; -fx-background-radius: 15px;" text="Order List" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
